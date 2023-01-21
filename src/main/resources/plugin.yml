@@ -1,0 +1,45 @@
+api-version: 1.17
+author: Epicnicity322
+depend: [ EpicPluginLib, Vault ]
+description: Player warp owning and management plugin
+main: com.epicnicity322.playerwarps.PlayerWarps
+name: PlayerWarps
+version: 1.0
+
+commands:
+  delplayerwarp:
+    aliases: [ delpwarp ]
+    description: Delete a player's warp.
+
+  playerwarp:
+    aliases: [ pwarp ]
+    description: Teleport to a player's warp.
+
+  playerwarpinfo:
+    aliases: [ pwarpinfo ]
+    description: See info about a warp.
+
+  playerwarps:
+    aliases: [ pwarps ]
+    description: List all player warps.
+
+  playerwarpsreload:
+    aliases: [ pwarpsreload, pwreload ]
+    description: Reload configurations.
+
+  setplayerwarp:
+    aliases: [ setpwarp ]
+    description: Set your warp to your current location.
+
+permissions:
+  playerwarps.delay.bypass:
+    description: Allows to teleport to warps instantly without delays.
+    default: op
+
+  playerwarps.delotherwarps:
+    description: Allows players to delete other player's warps.
+    default: op
+
+  playerwarps.reload:
+    description: Allows to reload configurations with /playerwarpsreload.
+    default: op
